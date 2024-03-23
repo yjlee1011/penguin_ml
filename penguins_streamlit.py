@@ -5,13 +5,13 @@ import pandas as pd
 import pickle
 
 st.title("Penguin Classifier: A Machine Learning App")
-#st.write("This app uses 6 inputs to predict the species of penguin using "
-#         "a model built on the Palmer Penguins dataset. Use the form below "
-#         "to get started!")
+st.write("This app uses 6 inputs to predict the species of penguin using "
+         "a model built on the Palmer Penguins dataset. Use the form below "
+         "to get started!")
 
-#password_guess = st.text_input("What is the password?")
-#if password_guess != st.secrets["password"]:
-#    st.stop()
+password_guess = st.text_input("What is the password?")
+if password_guess != st.secrets["password"]:
+    st.stop()
 
 penguin_df = pd.read_csv("penguins.csv")
 
